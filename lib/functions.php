@@ -18,9 +18,28 @@ function getContent() {
 
         include __DIR__.'/../pages/contact.php';
     }
+    else {
+        echo "La page demander n'existe pas";
+    }
 }
 
 function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
+function getUserData() {
+    $fiche = file_get_contents('../data/user.json');
+    $fichier = json_decode($fiche);
+
+    foreach ($fichier as $document) {
+        if (is_array($document)){
+            foreach ($document as $value){
+                foreach ($value as $critere) {
+                    echo $critere . "<br>";
+                }
+            }
+        }else{
+            ;echo $document . "<br>";
+        }
+    }
+}
