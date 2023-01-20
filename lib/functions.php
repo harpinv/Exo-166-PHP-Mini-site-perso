@@ -27,7 +27,7 @@ function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
-function getUserData() {
+function getUserDate() {
     $fiche = file_get_contents('../data/user.json');
     $fichier = json_decode($fiche);
 
@@ -35,11 +35,11 @@ function getUserData() {
         if (is_array($document)){
             foreach ($document as $value){
                 foreach ($value as $critere) {
-                    echo $critere . "<br>";
+                    echo "<br>" . $critere ;
                 }
             }
         }else{
-            ;echo $document . "<br>";
+            echo $document . " ";
         }
     }
 }

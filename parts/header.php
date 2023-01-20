@@ -10,10 +10,16 @@
         <header>
             <h1>Jane Doe</h1>
             <?php
+            getPart('menu');
 
-            //require "../lib/functions.php";
-            //getPart('menu');
-            require "../parts/menu.php";
-            require "../parts/footer.php";
+
             ?>
         </header>
+<?php
+
+
+
+
+require "../parts/footer.php";
+?>
+
