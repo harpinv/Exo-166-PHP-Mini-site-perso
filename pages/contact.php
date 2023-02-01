@@ -11,7 +11,7 @@
         </div>
         <div>
             <label>Entrer votre age</label>
-            <input type="text" name="nom" id="nom">
+            <input type="text" name="age" id="age">
         </div>
         <div>
             <label>Entrer votre adresse mail</label>

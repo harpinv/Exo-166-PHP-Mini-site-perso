@@ -10,8 +10,8 @@
         <header>
             <h1>Jane Doe</h1>
             <?php
-            getPart('menu');
 
+            require "../parts/menu.php";
 
             ?>
         </header>
