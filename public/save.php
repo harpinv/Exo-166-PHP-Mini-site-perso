@@ -19,6 +19,6 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['age']) && is
     $_SESSION['prenom'] = $_POST['prenom'];
 
 } else {
-    echo "une erreur 'est produite lors de l'enregistrement";
+    echo "une erreur s'est produite lors de l'enregistrement";
 }
 
